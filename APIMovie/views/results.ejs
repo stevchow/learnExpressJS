@@ -1,0 +1,12 @@
+<h1>Search results</h1>
+
+<ul>
+    <%  data['Search'].forEach(function(movie){  %>
+        <li>
+            <%= `${movie["Title"]} || Year: ${movie["Year"]} || IMDB id = ${movie["imdbID"]}` %>
+        </li>
+        <% });%>
+
+</ul>
+
+<a href="/">Search again</a>
